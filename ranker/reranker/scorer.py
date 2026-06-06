@@ -80,6 +80,9 @@ class CandidateScorer:
     Usage:
         scorer = CandidateScorer()
         scored = scorer.score_candidates(candidates, jd_requirements)
+
+        # With adaptive weights from feedback:
+        scorer = CandidateScorer(weights=adapted_weights)
     """
 
     def __init__(self, weights: Optional[Dict[str, float]] = None):
