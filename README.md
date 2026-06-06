@@ -10,6 +10,16 @@ An enterprise-grade, explainable candidate ranking and retrieval engine built fo
 
 ---
 
+# Video Presentation
+
+<video controls width="90%">
+  <source src="https://drive.google.com/file/d/1ZR3_t0VqkXU_B8nSlXLvGrGEIdUF_5AO/view" type="video/mp4">
+</video>
+
+---
+
+---
+
 ## 🔍 System Data Flow
 
 Below is the conceptual architecture of the Candidate Intelligence pipeline:
@@ -181,8 +191,4 @@ CAND_0046064,3,0.779139,"embeddings, faiss, pinecone, sentence-transformers, vec
 
 ## 📝 License
 This project is licensed under the MIT License. See [LICENSE](./ranker/frontend/LICENSE) for more details.
-# Video Presentation
 
-<video controls width="90%">
-  <source src="https://drive.google.com/file/d/1ZR3_t0VqkXU_B8nSlXLvGrGEIdUF_5AO/view" type="video/mp4">
-</video>
