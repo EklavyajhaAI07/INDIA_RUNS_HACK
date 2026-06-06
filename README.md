@@ -15,7 +15,7 @@ An enterprise-grade, explainable candidate ranking and retrieval engine built fo
 <iframe
     width="800"
     height="450"
-    src="https://youtu.be/yl_nhRdBpJE"
+    src="https://www.youtube.com/embed/yl_nhRdBpJE"
     title="Video Presentation"
     frameborder="0"
     allowfullscreen>
