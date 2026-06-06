@@ -23,7 +23,8 @@ from pathlib import Path
 
 
 def run_pipeline(candidates_path: str, jd_path: str, output_path: str,
-                 top_k_retrieve: int = 1000, top_k_output: int = 100):
+                 top_k_retrieve: int = 1000, top_k_output: int = 100,
+                 use_feedback: bool = False):
     """
     Run the full ranking pipeline.
 
@@ -33,6 +34,7 @@ def run_pipeline(candidates_path: str, jd_path: str, output_path: str,
         output_path: Path to output CSV
         top_k_retrieve: Number of candidates to retrieve (default: 1000)
         top_k_output: Number of candidates to output (default: 100)
+        use_feedback: If True, load adaptive weights from recruiter feedback
     """
     start_time = time.time()
 
@@ -113,7 +115,26 @@ def run_pipeline(candidates_path: str, jd_path: str, output_path: str,
     print("=" * 60)
 
     from reranker import CandidateScorer
-    scorer = CandidateScorer()
+
+    # Load adaptive weights from feedback if enabled
+    scoring_weights = None
+    if use_feedback:
+        try:
+            from feedback import FeedbackStore, WeightAdapter
+            feedback_store = FeedbackStore()
+            adapter = WeightAdapter(feedback_store)
+            adapted = adapter.adapt()
+            if adapted.adapted:
+                scoring_weights = adapted.weights
+                print(f"  Loaded adaptive weights (from {adapted.feedback_count} feedback entries)")
+                print(f"  Acceptance rate: {adapted.acceptance_rate:.1%}")
+                print(f"  Adjustment magnitude: {adapted.adjustment_magnitude:.4f}")
+            else:
+                print(f"  Using default weights ({adapted.feedback_count}/{adapter.min_feedback} feedback needed)")
+        except Exception as e:
+            print(f"  Warning: Could not load feedback weights: {e}")
+
+    scorer = CandidateScorer(weights=scoring_weights)
     scored = scorer.score_candidates(top_candidates, jd)
 
     print(f"  Scored {len(scored)} candidates")
@@ -157,13 +178,39 @@ def run_pipeline(candidates_path: str, jd_path: str, output_path: str,
 
     with open(output_file, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
-        writer.writerow(["candidate_id", "rank", "score", "reasoning"])
+        writer.writerow([
+            "candidate_id", "rank", "score",
+            "top_matched_skills", "missing_must_haves",
+            "breakdown_scores", "reasoning"
+        ])
 
         for sc in scored_dicts:
+            # Format breakdown scores
+            breakdown = (
+                f"semantic_fit={sc['semantic_fit']['score']:.2f}, "
+                f"must_have_coverage={sc['must_have_coverage']['score']:.2f}, "
+                f"experience_fit={sc['experience_fit']['score']:.2f}, "
+                f"role_fit={sc['role_fit']['score']:.2f}, "
+                f"recency={sc['recency']['score']:.2f}, "
+                f"behavioral_fit={sc['behavioral_fit']['score']:.2f}, "
+                f"bonus_fit={sc['bonus_fit']['score']:.2f}"
+            )
+
+            # Top matched skills (first 5)
+            matched = sc.get("matched_skills", [])
+            top_skills = ", ".join(matched[:5]) if matched else ""
+
+            # Missing must-haves
+            missing = sc.get("missing_skills", [])
+            missing_str = ", ".join(missing) if missing else ""
+
             writer.writerow([
                 sc["candidate_id"],
                 sc["rank"],
                 f"{sc['final_score']:.6f}",
+                top_skills,
+                missing_str,
+                breakdown,
                 sc["reasoning"]
             ])
 
@@ -191,6 +238,7 @@ def main():
     parser.add_argument("--out", required=True, help="Output CSV path")
     parser.add_argument("--top-k-retrieve", type=int, default=1000, help="Number of candidates to retrieve")
     parser.add_argument("--top-k-output", type=int, default=100, help="Number of candidates to output")
+    parser.add_argument("--use-feedback", action="store_true", help="Use adaptive weights from recruiter feedback")
 
     args = parser.parse_args()
 
@@ -200,6 +248,7 @@ def main():
         output_path=args.out,
         top_k_retrieve=args.top_k_retrieve,
         top_k_output=args.top_k_output,
+        use_feedback=args.use_feedback,
     )
 
 
