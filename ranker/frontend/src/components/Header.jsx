@@ -2,6 +2,7 @@ import { useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import { MagneticElement } from './CursorPhysics'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -89,11 +90,13 @@ function StatCard({ label, value, icon }) {
   }, [])
 
   return (
-    <div ref={cardRef}
-         className="relative px-5 py-3 rounded-xl bg-deep-800/60 border border-accent/20 backdrop-blur-sm min-w-[140px]">
-      <div className="text-2xl mb-1" aria-hidden="true">{icon}</div>
-      <div className="text-xl font-bold text-white">{value}</div>
-      <div className="text-xs text-gray-400 mt-0.5 uppercase tracking-wider">{label}</div>
-    </div>
+    <MagneticElement strength={0.15}>
+      <div ref={cardRef}
+           className="relative px-5 py-3 rounded-xl bg-deep-800/60 border border-accent/20 backdrop-blur-sm min-w-[140px] transition-all duration-200 hover:border-accent/50 hover:shadow-[0_0_20px_rgba(108,92,231,0.3)]">
+        <div className="text-2xl mb-1" aria-hidden="true">{icon}</div>
+        <div className="text-xl font-bold text-white">{value}</div>
+        <div className="text-xs text-gray-400 mt-0.5 uppercase tracking-wider">{label}</div>
+      </div>
+    </MagneticElement>
   )
 }
