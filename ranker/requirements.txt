@@ -3,3 +3,5 @@ rank-bm25
 python-docx
 sentence-transformers
 faiss-cpu
+fastapi
+uvicorn
