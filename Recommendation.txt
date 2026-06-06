@@ -1,0 +1,121 @@
+Recommended architecture
+Use a 4-stage pipeline: JD understanding → candidate retrieval → explainable reranking → formatted output. This fits the problem statement’s emphasis on semantic understanding, full-profile reasoning, and recruiter-trustworthy explanations better than a single embedding similarity score.
+
+A practical design is:
+
+Stage 1: Parse the JD into must-haves, good-to-haves, seniority, domain, location/work mode, and behavioral signals.
+
+Stage 2: Retrieve candidates using hybrid search, combining BM25/keyword matches with dense embeddings because embeddings capture synonyms and context beyond exact wording.
+
+Stage 3: Rerank top 
+N
+N candidates using weighted features such as skill fit, experience fit, recency, role alignment, project relevance, and activity signals.
+
+Stage 4: Generate explanations like “matched 4/5 must-have skills, 3.8 years relevant backend work, recent Python/API activity, fintech exposure.”
+
+Why this works
+Dense embeddings help when the wording differs, such as “ML model development” versus “machine learning,” which is exactly where old keyword filters fail. Research and industry descriptions both point to semantic matching plus constraint-aware ranking as more effective than lexical matching alone.
+
+Reranking is the key differentiator because retrieval finds plausible candidates, but reranking decides who is actually best. In production-style systems, explainable ranking usually combines semantic relevance with deterministic metadata signals instead of relying only on one model score.
+
+Scoring design
+A clean scoring formula for your hackathon can look like this:
+
+FinalScore=0.35(SemanticFit)+0.20(MustHaveCoverage)+0.15(ExperienceFit)+0.10(RoleFit)+0.10(Recency)+0.05(BehavioralSignals)+0.05(BonusFit)
+This mirrors common interpretable scoring patterns where skills and experience dominate, while recency and profile signals act as boosters rather than deciding the whole rank.
+
+Suggested feature set:
+
+Feature	What to compute
+SemanticFit	Embedding similarity between JD and candidate summary/resume chunks. 
+MustHaveCoverage	Exact or normalized match rate for required skills, tools, certifications, and constraints. 
+ExperienceFit	Difference between required years and inferred relevant years, with penalty if under threshold. 
+RoleFit	Similarity between target role and past titles/projects. 
+Recency	Higher score if matching skills appear in recent roles or recent platform activity. 
+BehavioralSignals	GitHub/platform activity, consistency, responsiveness, endorsements, or engagement if available in dataset. 
+BonusFit	Good-to-have tech stack, industry exposure, leadership, hackathon/public project signals. 
+Use hard filters sparingly for truly non-negotiable items like required work authorization, mandatory years floor, or must-have certifications. A source describing candidate ranking recommends filtering on hard constraints first, then scoring the rest, which is a strong pattern for both speed and precision.
+
+Implementation stack
+For a fast, credible build, use:
+
+Python + pandas for parsing and feature engineering.
+
+SentenceTransformers for JD/candidate embeddings.
+
+FAISS or another vector index for fast retrieval across the dataset.
+
+A cross-encoder or LLM-based reranker for top 50–200 candidates only, if compute allows.
+
+LightGBM/XGBoost or a weighted rules engine for final explainable score composition.
+
+Two good hackathon-grade options:
+
+Simpler and safer: BM25 + embeddings + weighted scoring engine + explanation generator. This is easier to finish and explain.
+
+Stronger if time permits: Hybrid retrieval + cross-encoder reranker + feature-based final score + LLM explanation layer. This better reflects modern retrieve-then-rerank design.
+
+For explainability, don’t let an LLM invent reasons after ranking. Instead, store feature-level evidence during scoring and have the final explanation read from those signals, because transparent AI ranking is judged more favorably when recruiters can see exactly why someone scored well.
+
+What to submit
+Your GitHub repo should include:
+
+data_ingestion/ for reading candidate files and JD input.
+
+jd_parser/ for extracting requirements.
+
+retrieval/ for BM25 + vector search.
+
+reranker/ for scoring and ranking.
+
+explainability/ for evidence extraction and human-readable reasons.
+
+main.py or app.py to run end-to-end.
+
+README.md with setup, architecture, assumptions, and sample output.
+
+Your ranked output file should include at least:
+
+Candidate ID
+
+Rank
+
+Final score
+
+Breakdown scores
+
+Top matched skills
+
+Missing must-haves
+
+Short explanation
+This aligns with the challenge’s requirement for a recruiter-trustworthy shortlist rather than a black-box score.
+
+For the deck/PDF, structure it like this:
+
+Problem and why keyword matching fails.
+
+Dataset fields used.
+
+Architecture diagram.
+
+Retrieval strategy.
+
+Reranking formula.
+
+Explainability design.
+
+Example ranked output.
+
+Failure cases and future improvements.
+
+Strong judging angles
+To stand out, emphasize three things:
+
+Hybrid intelligence: lexical + semantic + structured metadata.
+
+Explainability: every score is decomposable and evidence-backed.
+
+Recruiter realism: must-have gating, recent experience weighting, and title/domain fit instead of generic similarity alone.
+
+A very strong bonus is to add a recruiter feedback loop where accepted/rejected candidates slightly adjust weights over time. One practical ranking design suggests iterative weight updates from reviewer feedback, which makes your system look more production-ready.

@@ -1,0 +1,27 @@
+# Data files (Exclude the extremely large 487MB candidates database)
+India_runs_data_and_ai_challenge/candidates.jsonl
+*.csv
+ranker/test_output.csv
+ranker/submission.csv
+
+# Python Cache & Virtual Environments
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+venv/
+.venv/
+
+# Frontend dependencies and builds
+**/node_modules/
+**/dist/
+**/dist-ssr/
+*.local
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

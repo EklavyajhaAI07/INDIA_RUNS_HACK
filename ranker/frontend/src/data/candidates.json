@@ -1,0 +1,602 @@
+[
+  {
+    "candidate_id": "CAND_0033861",
+    "rank": "1",
+    "score": "0.851310",
+    "reasoning": "Knows embeddings, sentence-transformers, pinecone +10 more; 8.0yr experience; Current: senior nlp engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0071974",
+    "rank": "2",
+    "score": "0.801132",
+    "reasoning": "Knows embeddings, pinecone, weaviate +6 more; 7.8yr experience; Current: senior ai engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0046064",
+    "rank": "3",
+    "score": "0.779139",
+    "reasoning": "Knows embeddings, faiss, pinecone +10 more; 8.9yr experience; Current: senior nlp engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0055905",
+    "rank": "4",
+    "score": "0.775073",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +9 more; 8.1yr experience; Current: senior machine learning engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0020877",
+    "rank": "5",
+    "score": "0.773414",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +10 more; 5.1yr experience; Current: applied ml engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0002025",
+    "rank": "6",
+    "score": "0.769680",
+    "reasoning": "Knows embeddings, faiss, pinecone +7 more; 5.9yr experience; Current: senior ai engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0007009",
+    "rank": "7",
+    "score": "0.752524",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +9 more; 7.9yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0041611",
+    "rank": "8",
+    "score": "0.751824",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +11 more; 6.4yr experience; Current: staff machine learning engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0044855",
+    "rank": "9",
+    "score": "0.747379",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +10 more; 6.6yr experience; Current: senior data scientist; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0011687",
+    "rank": "10",
+    "score": "0.734809",
+    "reasoning": "Knows embeddings, faiss, pinecone +8 more; 7.8yr experience; Current: senior nlp engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0079387",
+    "rank": "11",
+    "score": "0.734792",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +10 more; 6.9yr experience; Current: ai engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0092278",
+    "rank": "12",
+    "score": "0.734479",
+    "reasoning": "Knows embeddings, faiss, milvus +8 more; 6.8yr experience; Current: senior nlp engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0039754",
+    "rank": "13",
+    "score": "0.731397",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +14 more; 16.2yr experience; Current: senior applied scientist; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0077337",
+    "rank": "14",
+    "score": "0.729791",
+    "reasoning": "Knows embeddings, sentence-transformers, pinecone +9 more; 7.0yr experience; Current: staff machine learning engineer; Knows 12 required skills"
+  },
+  {
+    "candidate_id": "CAND_0081846",
+    "rank": "15",
+    "score": "0.728526",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +9 more; 6.7yr experience; Current: lead ai engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0011162",
+    "rank": "16",
+    "score": "0.728021",
+    "reasoning": "Knows embeddings, faiss, pinecone +7 more; 5.8yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0018499",
+    "rank": "17",
+    "score": "0.723914",
+    "reasoning": "Knows embeddings, faiss, pinecone +8 more; 7.2yr experience; Current: senior machine learning engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0027691",
+    "rank": "18",
+    "score": "0.719279",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +8 more; 6.5yr experience; Current: nlp engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0083307",
+    "rank": "19",
+    "score": "0.719148",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +10 more; 7.8yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0044222",
+    "rank": "20",
+    "score": "0.714275",
+    "reasoning": "Knows sentence-transformers, faiss, weaviate +8 more; 7.7yr experience; Current: ai engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0042029",
+    "rank": "21",
+    "score": "0.708939",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +9 more; 6.5yr experience; Current: senior data scientist; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0028793",
+    "rank": "22",
+    "score": "0.705307",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +8 more; 7.2yr experience; Current: search engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0006557",
+    "rank": "23",
+    "score": "0.705225",
+    "reasoning": "Knows embeddings, faiss, pinecone +7 more; 7.9yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0055992",
+    "rank": "24",
+    "score": "0.704529",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +10 more; 16.9yr experience; Current: ai engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0086151",
+    "rank": "25",
+    "score": "0.703192",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +7 more; 7.7yr experience; Current: recommendation systems engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0041568",
+    "rank": "26",
+    "score": "0.702380",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +8 more; 5.2yr experience; Current: search engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0086022",
+    "rank": "27",
+    "score": "0.701341",
+    "reasoning": "Knows embeddings, faiss, pinecone +7 more; 5.3yr experience; Current: senior applied scientist; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0093547",
+    "rank": "28",
+    "score": "0.697858",
+    "reasoning": "Knows faiss, pinecone, weaviate +7 more; 2.9yr exp (outside preferred range); Current: senior machine learning engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0040887",
+    "rank": "29",
+    "score": "0.697684",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +9 more; 4.7yr experience; Current: machine learning engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0008425",
+    "rank": "30",
+    "score": "0.696461",
+    "reasoning": "Knows sentence-transformers, pinecone, qdrant +6 more; 7.8yr experience; Current: senior nlp engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0052328",
+    "rank": "31",
+    "score": "0.694778",
+    "reasoning": "Knows embeddings, pinecone, opensearch +4 more; 6.5yr experience; Current: recommendation systems engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0061265",
+    "rank": "32",
+    "score": "0.691310",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +6 more; 6.6yr experience; Current: recommendation systems engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0076904",
+    "rank": "33",
+    "score": "0.688744",
+    "reasoning": "Knows sentence-transformers, faiss, weaviate +7 more; 4.2yr experience; Current: senior data scientist; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0069905",
+    "rank": "34",
+    "score": "0.686457",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +9 more; 6.6yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0080766",
+    "rank": "35",
+    "score": "0.686403",
+    "reasoning": "Knows sentence-transformers, milvus, opensearch +9 more; 8.8yr experience; Current: staff machine learning engineer; Knows 12 required skills"
+  },
+  {
+    "candidate_id": "CAND_0051630",
+    "rank": "36",
+    "score": "0.686385",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +7 more; 6.0yr experience; Current: machine learning engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0081053",
+    "rank": "37",
+    "score": "0.684476",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +6 more; 5.4yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0089552",
+    "rank": "38",
+    "score": "0.683981",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +9 more; 6.0yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0094759",
+    "rank": "39",
+    "score": "0.682657",
+    "reasoning": "Knows embeddings, faiss, weaviate +8 more; 8.6yr experience; Current: lead ai engineer; Knows 11 required skills"
+  },
+  {
+    "candidate_id": "CAND_0050454",
+    "rank": "40",
+    "score": "0.682450",
+    "reasoning": "Knows sentence-transformers, faiss, qdrant +5 more; 6.8yr experience; Current: ai engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0060072",
+    "rank": "41",
+    "score": "0.682375",
+    "reasoning": "Knows embeddings, pinecone, qdrant +5 more; 5.7yr experience; Current: staff machine learning engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0053591",
+    "rank": "42",
+    "score": "0.680307",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +9 more; 5.3yr experience; Current: ai engineer; Knows 12 required skills"
+  },
+  {
+    "candidate_id": "CAND_0094056",
+    "rank": "43",
+    "score": "0.680032",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +6 more; 5.9yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0029367",
+    "rank": "44",
+    "score": "0.679777",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +7 more; 5.7yr experience; Current: senior data scientist; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0005649",
+    "rank": "45",
+    "score": "0.677678",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +9 more; 7.4yr experience; Current: senior data scientist; Knows 12 required skills"
+  },
+  {
+    "candidate_id": "CAND_0088025",
+    "rank": "46",
+    "score": "0.675569",
+    "reasoning": "Knows pinecone, elasticsearch, retrieval +4 more; 8.6yr experience; Current: staff machine learning engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0041669",
+    "rank": "47",
+    "score": "0.674751",
+    "reasoning": "Knows embeddings, faiss, pinecone +7 more; 8.0yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0079064",
+    "rank": "48",
+    "score": "0.674172",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +8 more; 5.2yr experience; Current: senior data scientist; Knows 11 required skills"
+  },
+  {
+    "candidate_id": "CAND_0054123",
+    "rank": "49",
+    "score": "0.674126",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +9 more; 4.7yr experience; Current: applied ml engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0030953",
+    "rank": "50",
+    "score": "0.672208",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +11 more; 7.8yr experience; Knows 14 required skills"
+  },
+  {
+    "candidate_id": "CAND_0068811",
+    "rank": "51",
+    "score": "0.669841",
+    "reasoning": "Knows embeddings, pinecone, weaviate +7 more; 8.0yr experience; Current: applied ml engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0039838",
+    "rank": "52",
+    "score": "0.667122",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +6 more; 4.9yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0046525",
+    "rank": "53",
+    "score": "0.666322",
+    "reasoning": "Knows embeddings, faiss, qdrant +7 more; 6.1yr experience; Current: senior machine learning engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0057563",
+    "rank": "54",
+    "score": "0.664269",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +6 more; 6.8yr experience; Current: nlp engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0037944",
+    "rank": "55",
+    "score": "0.663893",
+    "reasoning": "Knows embeddings, pinecone, opensearch +5 more; 4.9yr experience; Current: senior data scientist; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0009691",
+    "rank": "56",
+    "score": "0.663868",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +6 more; 6.2yr experience; Current: applied ml engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0018549",
+    "rank": "57",
+    "score": "0.663514",
+    "reasoning": "Knows embeddings, weaviate, qdrant +6 more; 6.8yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0070398",
+    "rank": "58",
+    "score": "0.663450",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +7 more; 7.2yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0047542",
+    "rank": "59",
+    "score": "0.662209",
+    "reasoning": "Knows embeddings, weaviate, retrieval +2 more; 5.0yr experience; Current: senior software engineer (ml); Strong semantic match; Missing 16 required skills"
+  },
+  {
+    "candidate_id": "CAND_0096172",
+    "rank": "60",
+    "score": "0.661362",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +8 more; 5.2yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0081686",
+    "rank": "61",
+    "score": "0.659711",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +7 more; 6.0yr experience; Current: search engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0093912",
+    "rank": "62",
+    "score": "0.659699",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +6 more; 5.3yr experience; Current: senior data scientist; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0062247",
+    "rank": "63",
+    "score": "0.658622",
+    "reasoning": "Knows sentence-transformers, faiss, pinecone +5 more; 7.3yr experience; Current: ai engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0007411",
+    "rank": "64",
+    "score": "0.656765",
+    "reasoning": "Knows pinecone, opensearch, retrieval +4 more; 8.0yr experience; Current: senior machine learning engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0013613",
+    "rank": "65",
+    "score": "0.654399",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +7 more; 4.7yr experience; Current: machine learning engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0027801",
+    "rank": "66",
+    "score": "0.653790",
+    "reasoning": "Knows sentence-transformers, faiss, milvus +6 more; 7.4yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0036437",
+    "rank": "67",
+    "score": "0.653543",
+    "reasoning": "Knows faiss, weaviate, milvus +4 more; 4.8yr experience; Current: search engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0075574",
+    "rank": "68",
+    "score": "0.653056",
+    "reasoning": "Knows embeddings, pinecone, weaviate +7 more; 5.7yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0013393",
+    "rank": "69",
+    "score": "0.651933",
+    "reasoning": "Knows embeddings, pinecone, qdrant +5 more; 5.3yr experience; Current: ml engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0076251",
+    "rank": "70",
+    "score": "0.650607",
+    "reasoning": "Knows sentence-transformers, faiss, weaviate +4 more; 7.6yr experience; Current: search engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0005260",
+    "rank": "71",
+    "score": "0.650059",
+    "reasoning": "Knows embeddings, faiss, retrieval +6 more; 5.2yr experience; Current: senior nlp engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0064270",
+    "rank": "72",
+    "score": "0.649830",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +6 more; 4.2yr experience; Current: applied ml engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0057701",
+    "rank": "73",
+    "score": "0.649590",
+    "reasoning": "Knows sentence-transformers, faiss, qdrant +7 more; 4.1yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0075249",
+    "rank": "74",
+    "score": "0.646033",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +7 more; 6.2yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0050876",
+    "rank": "75",
+    "score": "0.645731",
+    "reasoning": "Knows embeddings, faiss, qdrant +5 more; 6.0yr experience; Current: applied ml engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0017960",
+    "rank": "76",
+    "score": "0.644733",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +8 more; 7.7yr experience; Knows 11 required skills"
+  },
+  {
+    "candidate_id": "CAND_0074225",
+    "rank": "77",
+    "score": "0.644353",
+    "reasoning": "Knows embeddings, pinecone, qdrant +8 more; 4.3yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0026532",
+    "rank": "78",
+    "score": "0.641853",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +7 more; 4.8yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0099806",
+    "rank": "79",
+    "score": "0.641209",
+    "reasoning": "Knows embeddings, faiss, weaviate +5 more; 4.6yr experience; Current: ai engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0075439",
+    "rank": "80",
+    "score": "0.640670",
+    "reasoning": "Knows embeddings, pinecone, opensearch +6 more; 4.3yr experience; Current: machine learning engineer; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0051292",
+    "rank": "81",
+    "score": "0.639943",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +7 more; 5.2yr experience; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0066376",
+    "rank": "82",
+    "score": "0.638634",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +6 more; 5.7yr experience; Current: applied ml engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0077285",
+    "rank": "83",
+    "score": "0.636225",
+    "reasoning": "Knows embeddings, faiss, pinecone +5 more; 5.5yr experience; Current: recommendation systems engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0057736",
+    "rank": "84",
+    "score": "0.635882",
+    "reasoning": "Knows embeddings, weaviate, qdrant +3 more; 6.2yr experience; Current: computer vision engineer; Experience level is ideal; Missing 15 required skills"
+  },
+  {
+    "candidate_id": "CAND_0036863",
+    "rank": "85",
+    "score": "0.635739",
+    "reasoning": "Knows embeddings, faiss, pinecone +5 more; 4.3yr experience; Current: senior data scientist; Relevant job titles"
+  },
+  {
+    "candidate_id": "CAND_0095528",
+    "rank": "86",
+    "score": "0.635682",
+    "reasoning": "Knows embeddings, qdrant, opensearch +5 more; 5.3yr experience; Current: senior data scientist; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0011432",
+    "rank": "87",
+    "score": "0.635474",
+    "reasoning": "Knows embeddings, pinecone, opensearch +6 more; 7.6yr experience; Current: senior data scientist; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0042506",
+    "rank": "88",
+    "score": "0.633312",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +8 more; 4.2yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0044883",
+    "rank": "89",
+    "score": "0.633302",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +8 more; 6.3yr experience; Current: ai engineer; Knows 11 required skills"
+  },
+  {
+    "candidate_id": "CAND_0091909",
+    "rank": "90",
+    "score": "0.632962",
+    "reasoning": "Knows embeddings, pinecone, qdrant +4 more; 6.9yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0093883",
+    "rank": "91",
+    "score": "0.632837",
+    "reasoning": "Knows embeddings, qdrant, milvus +5 more; 5.0yr experience; Current: ai research engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0091534",
+    "rank": "92",
+    "score": "0.632447",
+    "reasoning": "Knows embeddings, sentence-transformers, faiss +9 more; 16.6yr experience; Current: ai engineer; Knows 12 required skills"
+  },
+  {
+    "candidate_id": "CAND_0006418",
+    "rank": "93",
+    "score": "0.631778",
+    "reasoning": "Knows embeddings, weaviate, qdrant +5 more; 5.7yr experience; Current: machine learning engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0065195",
+    "rank": "94",
+    "score": "0.631642",
+    "reasoning": "Knows embeddings, pinecone, qdrant +4 more; 5.1yr experience; Current: search engineer; Experience level is ideal"
+  },
+  {
+    "candidate_id": "CAND_0072660",
+    "rank": "95",
+    "score": "0.630818",
+    "reasoning": "Knows sentence-transformers, faiss, opensearch +4 more; 7.1yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0032807",
+    "rank": "96",
+    "score": "0.628909",
+    "reasoning": "Knows embeddings, pinecone, milvus +6 more; 4.2yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0043228",
+    "rank": "97",
+    "score": "0.627903",
+    "reasoning": "Knows sentence-transformers, faiss, weaviate +5 more; 6.8yr experience; Strong semantic match"
+  },
+  {
+    "candidate_id": "CAND_0004402",
+    "rank": "98",
+    "score": "0.626917",
+    "reasoning": "Knows qdrant, opensearch, retrieval +2 more; 6.0yr experience; Current: ai research engineer; Strong semantic match; Missing 16 required skills"
+  },
+  {
+    "candidate_id": "CAND_0067041",
+    "rank": "99",
+    "score": "0.626045",
+    "reasoning": "Knows weaviate, milvus, elasticsearch +3 more; 6.9yr experience; Current: data scientist; Experience level is ideal; Missing 15 required skills"
+  },
+  {
+    "candidate_id": "CAND_0091890",
+    "rank": "100",
+    "score": "0.625527",
+    "reasoning": "Knows pinecone, weaviate, milvus +5 more; 4.7yr experience; Current: ai research engineer; Experience level is ideal"
+  }
+]

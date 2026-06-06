@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Meta Tags -->
+    <title>Redrob AI — Candidate Intelligence Dashboard</title>
+    <meta name="description" content="AI-powered candidate ranking dashboard for Redrob. View scored and ranked Senior AI Engineer candidates with detailed reasoning and 7-factor scoring." />
+    <meta name="keywords" content="candidate ranking, AI hiring, talent intelligence, Redrob, machine learning, resume scoring" />
+    <meta name="author" content="Redrob AI" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://redrob-ai-candidate-ranking.vercel.app/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://redrob-ai-candidate-ranking.vercel.app/" />
+    <meta property="og:title" content="Redrob AI — Candidate Intelligence Dashboard" />
+    <meta property="og:description" content="AI-powered candidate ranking dashboard. 7-factor scoring engine with BM25 + semantic retrieval." />
+    <meta property="og:image" content="https://redrob-ai-candidate-ranking.vercel.app/og-image.png" />
+    <meta property="og:site_name" content="Redrob AI" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://redrob-ai-candidate-ranking.vercel.app/" />
+    <meta name="twitter:title" content="Redrob AI — Candidate Intelligence Dashboard" />
+    <meta name="twitter:description" content="AI-powered candidate ranking dashboard. 7-factor scoring engine with BM25 + semantic retrieval." />
+    <meta name="twitter:image" content="https://redrob-ai-candidate-ranking.vercel.app/og-image.png" />
+
+    <!-- Favicon (use favicon.png once generated, keep SVG as fallback) -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts (with crossorigin for security) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Content Security Policy -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self';" />
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Redrob AI Candidate Intelligence Dashboard",
+      "description": "AI-powered candidate ranking dashboard with 7-factor scoring engine",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "Redrob AI"
+      }
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Skip to content (accessibility) -->
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[9999] focus:px-4 focus:py-2 focus:bg-accent focus:text-white focus:rounded-lg">
+      Skip to content
+    </a>
+
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
