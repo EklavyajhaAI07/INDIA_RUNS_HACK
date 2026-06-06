@@ -183,4 +183,6 @@ CAND_0046064,3,0.779139,"embeddings, faiss, pinecone, sentence-transformers, vec
 This project is licensed under the MIT License. See [LICENSE](./ranker/frontend/LICENSE) for more details.
 # Video Presentation
 
-<video src="Redrob_video_presentation.mp4" controls width="100%"> </video>
+[![Watch Video Presentation](https://img.shields.io/badge/Watch%20Video%20Presentation-Redrob-blue?style=for-the-badge)](./Redrob_video_presentation.mp4)
+
+[Download / Watch the Redrob video presentation](./Redrob_video_presentation.mp4)
