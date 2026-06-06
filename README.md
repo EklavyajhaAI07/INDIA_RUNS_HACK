@@ -129,6 +129,42 @@ India.Runs Hack/
 
 ---
 
+## ⚙️ Assumptions
+
+1. **Candidate data** is provided as a JSONL file where each line contains a structured candidate profile with `profile`, `career_history`, `education`, `skills`, and `redrob_signals` fields.
+2. **Job description** is provided as a `.docx` or `.txt` file with standard formatting (sections for requirements, responsibilities, qualifications).
+3. **Experience values** in candidate profiles are numerically accurate (years as floats).
+4. **Skills** are normalized to lowercase for matching (e.g., "Python" == "python").
+5. **Recency window** defaults to 24 months for evaluating recent relevant experience.
+6. **Platform signals** (profile completion, response rate, endorsements) are populated in `redrob_signals` for behavioral scoring; missing values default to neutral scores.
+7. **Must-have skills** in the JD are treated as non-negotiable gating criteria; nice-to-have skills provide bonus points only.
+8. **Output is deterministic** — running the same inputs through the pipeline produces identical rankings every time (no randomization).
+
+---
+
+## 📊 Sample Output
+
+The pipeline produces a `submission.csv` with the following columns:
+
+```csv
+candidate_id,rank,score,top_matched_skills,missing_must_haves,breakdown_scores,reasoning
+CAND_0033861,1,0.851310,"embeddings, sentence-transformers, pinecone, faiss, vector-databases, nlp, pytorch, transformers, bert, rag, langchain, openai, llm, fine-tuning, prompt-engineering",,"semantic_fit=0.85, must_have_coverage=0.90, experience_fit=1.00, role_fit=0.80, recency=1.00, behavioral_fit=0.70, bonus_fit=0.75","Knows embeddings, sentence-transformers, pinecone +10 more; 8.0yr experience; Current: senior nlp engineer; Strong semantic match"
+CAND_0071974,2,0.801132,"embeddings, pinecone, weaviate, faiss, vector-databases, nlp, pytorch, transformers, bert, rag, langchain",,"semantic_fit=0.82, must_have_coverage=0.85, experience_fit=1.00, role_fit=0.75, recency=1.00, behavioral_fit=0.65, bonus_fit=0.70","Knows embeddings, pinecone, weaviate +6 more; 7.8yr experience; Current: senior ai engineer; Strong semantic match"
+CAND_0046064,3,0.779139,"embeddings, faiss, pinecone, sentence-transformers, vector-databases, nlp, pytorch, transformers, bert, rag, langchain, openai",,"semantic_fit=0.80, must_have_coverage=0.80, experience_fit=1.00, role_fit=0.70, recency=1.00, behavioral_fit=0.60, bonus_fit=0.65","Knows embeddings, faiss, pinecone +10 more; 8.9yr experience; Current: senior nlp engineer; Strong semantic match"
+```
+
+| Column | Description |
+|---|---|
+| `candidate_id` | Unique identifier for the candidate |
+| `rank` | Final rank (1 = best) |
+| `score` | Composite score (0.0 – 1.0) |
+| `top_matched_skills` | Must-have skills matched from the candidate profile |
+| `missing_must_haves` | Required skills the candidate is missing |
+| `breakdown_scores` | Individual 7-factor scores for full explainability |
+| `reasoning` | Human-readable explanation of the ranking decision |
+
+---
+
 ## ⚖️ Scoring Breakdown Details
 
 | Weight | Feature | Description |
