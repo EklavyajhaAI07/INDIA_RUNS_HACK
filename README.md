@@ -12,9 +12,14 @@ An enterprise-grade, explainable candidate ranking and retrieval engine built fo
 
 # Video Presentation
 
-<video controls width="90%">
-  <source src="[https://drive.google.com/file/d/1ZR3_t0VqkXU_B8nSlXLvGrGEIdUF_5AO/view](https://youtu.be/yl_nhRdBpJE)" type="video/mp4">
-</video>
+<iframe
+    width="800"
+    height="450"
+    src="https://youtu.be/yl_nhRdBpJE"
+    title="Video Presentation"
+    frameborder="0"
+    allowfullscreen>
+</iframe>
 
 ---
 
