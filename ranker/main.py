@@ -107,6 +107,20 @@ def run_pipeline(candidates_path: str, jd_path: str, output_path: str,
             c._retrieval_score = min(1.0, score / norm_factor)  # Normalize to 0-1
             top_candidates.append(c)
 
+    # Apply hard filters before scoring
+    min_exp_threshold = jd.min_years * 0.8
+    jd_must_skills = set(s.lower() for s in jd.must_have_skills)
+
+    filtered = []
+    for c in top_candidates:
+        c_skills = set(s.lower() for s in c.skill_names)
+        matched_count = len(c_skills & jd_must_skills)
+        if c.years_of_experience >= min_exp_threshold and matched_count >= 4:
+            filtered.append(c)
+
+    top_candidates = filtered
+    print(f"  After hard filters: {len(top_candidates)} candidates remain")
+
     # ============================================================
     # STAGE 4: Score and Rank
     # ============================================================
@@ -179,38 +193,14 @@ def run_pipeline(candidates_path: str, jd_path: str, output_path: str,
     with open(output_file, "w", newline="", encoding="utf-8") as f:
         writer = csv.writer(f)
         writer.writerow([
-            "candidate_id", "rank", "score",
-            "top_matched_skills", "missing_must_haves",
-            "breakdown_scores", "reasoning"
+            "candidate_id", "rank", "score", "reasoning"
         ])
 
         for sc in scored_dicts:
-            # Format breakdown scores
-            breakdown = (
-                f"semantic_fit={sc['semantic_fit']['score']:.2f}, "
-                f"must_have_coverage={sc['must_have_coverage']['score']:.2f}, "
-                f"experience_fit={sc['experience_fit']['score']:.2f}, "
-                f"role_fit={sc['role_fit']['score']:.2f}, "
-                f"recency={sc['recency']['score']:.2f}, "
-                f"behavioral_fit={sc['behavioral_fit']['score']:.2f}, "
-                f"bonus_fit={sc['bonus_fit']['score']:.2f}"
-            )
-
-            # Top matched skills (first 5)
-            matched = sc.get("matched_skills", [])
-            top_skills = ", ".join(matched[:5]) if matched else ""
-
-            # Missing must-haves
-            missing = sc.get("missing_skills", [])
-            missing_str = ", ".join(missing) if missing else ""
-
             writer.writerow([
                 sc["candidate_id"],
                 sc["rank"],
-                f"{sc['final_score']:.6f}",
-                top_skills,
-                missing_str,
-                breakdown,
+                f"{sc['final_score']:.5f}",
                 sc["reasoning"]
             ])
 
