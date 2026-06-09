@@ -423,12 +423,4 @@ This README is aligned to the current checked-in code behavior:
 
 # Video Presentation
 
-# Video Presentation
-
-# Video Presentation
-
-<video width="100%" controls autoplay muted loop>
-  <source src="Redrob_video_presentation.mp4" type="video/mp4">
-</video>
-
 [![Watch Demo](https://img.youtube.com/vi/yl_nhRdBpJE/maxresdefault.jpg)](https://youtu.be/yl_nhRdBpJE)
