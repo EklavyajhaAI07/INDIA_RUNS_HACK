@@ -427,6 +427,8 @@ This README is aligned to the current checked-in code behavior:
 
 # Video Presentation
 
-[![Watch Presentation Video](https://youtube.com)](https://youtu.be/yl_nhRdBpJE)
+<video width="100%" controls autoplay muted loop>
+  <source src="Redrob_video_presentation.mp4" type="video/mp4">
+</video>
 
-[Watch Presentation Video](https://github.com/EklavyajhaAI07/INDIA_RUNS_HACK/blob/main/Redrob_video_presentation.mp4)
+[![Watch Demo](https://img.youtube.com/vi/yl_nhRdBpJE/maxresdefault.jpg)](https://youtu.be/yl_nhRdBpJE)
